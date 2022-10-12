@@ -3,60 +3,63 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="cybereagle_wo_bg.ico" />
+  <link rel="icon" type="image/svg+xml" href="public/cybereagle_wo_bg.ico" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="build.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Staabi- ja Sidepataljoni Tarkvaraarenduse Klubi</title>
 </head>
 
-<body>
+<body class="antialiased">
   <main class="bg-stone-300 text-white relative">
 
-    <header class="w-full absolute left-0 top-0 p-6 lg:p-8 bg-lime-700">
-      <div class="flex justify-between">
+<!--     <header class="w-full absolute left-0 top-0 p-6 lg:p-8 bg-lime-700"> -->
+    <header class="">
+      <nav class="flex flex-wrap items-center justify-between w-full py-4 px-4 text-lg text-stone-50 bg-lime-700">
         <div>
           <h1 class="text-5xl font-bold font-mono">StSip TarK</h1>
           <h1 class="text-3x1 font-light font-mono">Tarkvaraarenduse Klubi</h1>
         </div>
-
-        <div>
-          <ul class="flex">
-            <li class="ml-24">
-              <a href="#projektid" class="smooth-scroll">
+        <div class="hidden md:flex md:items-center md:w-auto " id="menu">
+          <ul class="
+                      text-base text-stone-50
+                      pt-4
+                      md:flex
+                      md:justify-between
+                      md:pt-0">
+            <li>
+              <a href="#projektid" class="md:p-4 py-2 block hover:text-stone-300 smooth-scroll">
                 <div class="flex items-center justify-end">
-                  <div class="w-10 border-b border-solid border-white"></div>
                   <h1 class="ml-3 text-3xl font-bold">1</h1>
                 </div>
                 <div class="text-right">Projektid</div>
               </a>
             </li>
-            <li class="ml-24">
-              <a href="#meist">
+              <a href="#meist" class="md:p-4 py-2 block hover:text-stone-300 smooth-scroll">
                 <div class="flex items-center justify-end">
-                  <div class="w-10 border-b border-solid border-white"></div>
                   <h1 class="ml-3 text-3xl font-bold">2</h1>
                 </div>
                 <div class="text-right">Meist</div>
               </a>
-            </li>
-            <li class="ml-24">
-              <a href="#kontakt">
+            <li>
+              <a href="#kontakt" class="md:p-4 py-2 block hover:text-stone-300 smooth-scroll">
                 <div class="flex items-center justify-end">
-                  <div class="w-10 border-b border-solid border-white"></div>
                   <h1 class="ml-3 text-3xl font-bold">3</h1>
                 </div>
                 <div class="text-right">Kontakt</div>
               </a>
             </li>
-
           </ul>
         </div>
-      </div>
+        <svg xmlns="<http://www.w3.org/2000/svg>" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </nav>
     </header>
 
-    <section id="landing" class="w-full px-6 pt-64 columns-2 h-screen">
-      <div class="md:w-9/12 xl:w-8/12 xl:p-12">
+    <section id="landing" class="w-full px-6 pt-64 h-screen flex">
+      <div class="w-1/2 pr-2">
         <span class="font-bold uppercase tracking-widest text-stone-700 lg:text-2xl">
           hüljatud
         </span>
@@ -64,14 +67,18 @@
           Küberväejuhatuse parimad arendajad
         </h1>
         <p class="font-bold mb-1 text-stone-700"></p>
-        <p class="text-stone-700 lg:text-2xl lg:font-light">Kas sina oled tarkvaraarendaja kellele lubati kohta IKT arendajate meeskonnas, aga kui sa kohale tulid siis pandi
-          sind Kaitserühma jaoülemaks? Kas sinule lubati ka ülikooli auditooriumis, et kui tuled vabatahtlikult kübersõduriks siis saad kindla peale
+        <p class="text-stone-700 lg:text-2xl lg:font-light w-3/8">Kas sina oled tarkvaraarendaja, kellele lubati kohta IKT arendajate meeskonnas, aga kui sa kohale tulid siis pandi
+          sind Kaitserühma jaoülemaks? Kas sinule lubati ka ülikooli auditooriumis, et kui tuled vabatahtlikult kübersõduriks, siis saad kindla peale
           arendusmeeskonda? Kui sinu trots, pettumus ja äng on sama suur kui meie oma, siis on Staabi- ja Sidepataljoni Tarkvaraarenduse Klubi just
-          sulle. </p>
+          sulle.</p>
       </div>
+
       <div>
         <img src="public/cybereagle_wo_bg.png" class="max-w-full h-auto" alt="..." />
       </div>
+
+        </tr>
+      </table>
     </section>
 
     <section id="projektid" class="py-16 bg-lime-100">
@@ -82,18 +89,21 @@
             <p class="text-stone-700 font-bold uppercase tracking-widest">Enneolematu kübersõduri elamus sinu näpuotstes</p>
             <img class="shadow rounded-3xl h-auto align-middle border-none" src="public/shooter.jpg" alt="SBK Simulator 2023 screenshot" />
             <p class="text-stone-700 my-6 w-3/4 ">
-              Mängi kui värskelt kooli lõpetanud lootust ja rõõmu täis sõdurihakatis. Proovides hakkama saada erinevate uute raskuste ja
+              Mängi värskelt kooli lõpetanud lootust ja rõõmu täis sõdurihakatist ja proovi hakkama saada erinevate uute raskuste ja
               väljakutsetega.
             </p>
-            <p class="text-stone-700 font-bold">Mängi läbi erinevaid põnevaid situatsioone nagu</p>
+            <p class="text-stone-700 font-bold">Mängi läbi erinevaid põnevaid situatsioone nagu:</p>
             <ul class="px-6 text-stone-700 marker:text-stone-700 list-outside list-disc ml-6>">
-              <li>Proovi mitte rivis säbeleda</li>
+              <li>Ära säbele rivis</li>
               <li>Kirjuta seletuskirju</li>
               <li>Teosta ahjuvalvet</li>
               <li>Kaeva kaevikuid</li>
               <li>Hoolda relvi</li>
-              <li>Moppita korridori ja vetse </li>
-              <li><span class="font-bold">Üksi üksi edasi läks </span> (kuni oksenamiseni)</li>
+              <li>Mopita korridori ja vetse </li>
+              <li>Naudi kuivtoidupakke</li>
+              <li>Kaeva endale metsas auk ja situ sinna sisse</li>
+
+              <li><span class="font-bold">Üksi-üksi edasi läks </span> (kuni oksendamiseni)</li>
             </ul>
           </li>
         </ul>
@@ -106,25 +116,25 @@
           <tr>
             <td>
               <div>
-                <div class="mb-5 p-5 max-w-sm mx-auto bg-stone-50 rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="mb-5 p-5 max-w-sm mx-auto bg-stone-50 rounded-xl shadow-lg  flex flex-col md:flex-row items-center space-x-4">
                   <div class="shrink-0">
                     <img class="float-left rounded-full max-w-full h-auto" width="150" height="150" src="public/kaasik.JPG"
                       alt="kaasik" />
                   </div>
                   <div>
-                    <div class="text-xl font-medium text-black">BSc n-srs Kaasik</div>
+                    <div class="text-xl font-medium text-black">n-srs Kaasik BSc</div>
                     <div class="text-stone-700">StSip TaK asutaja ja eestvedaja</div>
                     <a class="text-stone-500 font-light" href="http://github.com/blimly">GitHub</a>
                     <a class="text-stone-500 font-light" href="http://martkaasik.net">Veebileht</a>
                   </div>
                 </div>
-                <div class="p-5 max-w-sm mx-auto bg-stone-50 rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="p-5 max-w-sm mx-auto bg-stone-50 rounded-xl shadow-lg flex flex-col md:flex-row items-center space-x-4">
                   <div class="shrink-0">
                     <img class="float-left rounded-full max-w-full h-auto" width="150" height="150" src="public/hannus.JPG"
                       alt="hannus" />
                   </div>
                   <div>
-                    <div class="text-xl font-medium text-black">BSc n-srs Hannus</div>
+                    <div class="text-xl font-medium text-black">n-srs Hannus BSc</div>
                     <div class="text-stone-700">Peainseneer, arendusjuht ja CTO</div>
                   </div>
                 </div>
@@ -142,7 +152,7 @@
                       <div class="text-md font-light text-stone-900">Tehnikavirna ekspert</div>
                   </div>
                   <div class=" px-5 max-w-sm mx-auto mb-2">
-                      <div class="text-lg font-bold text-stone-700">BSc n-srs Pärn</div>
+                      <div class="text-lg font-bold text-stone-700">n-srs Pärn BSc</div>
                       <div class="text-md font-light text-stone-900">Rockstar arendaja</div>
                   </div>
                   <div class=" px-5 max-w-sm mx-auto mb-2">
@@ -151,7 +161,7 @@
                   </div>
                   <div class=" px-5 max-w-sm mx-auto mb-2">
                       <div class="text-lg font-bold text-stone-700">n-srs Piits</div>
-                      <div class="text-md font-light text-stone-900">Vanem puhastusspetsialist</div>
+                      <div class="text-md font-light text-stone-900">Vanem puhastusallohvitser</div>
                   </div>
                   
 
@@ -173,7 +183,7 @@
   <footer class="absolute right-0 bottom-0 p-6 lg:p-32">
   </footer>
 
-<!--   <script type="module" src="/main.js"></script> -->
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
